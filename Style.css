@@ -1,0 +1,317 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8fbff;
+    color:#1f2937;
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Header */
+
+.header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#ffffff;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    text-decoration:none;
+    color:#0B7DDA;
+    font-size:30px;
+    font-weight:700;
+}
+
+.nav-menu{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.nav-menu a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-menu a:hover{
+    color:#0B7DDA;
+}
+
+/* Buttons */
+
+.primary-btn,
+.secondary-btn,
+.book-btn{
+
+    display:inline-block;
+    padding:14px 30px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.primary-btn,
+.book-btn{
+
+background:#0B7DDA;
+color:white;
+
+}
+
+.secondary-btn{
+
+background:white;
+border:2px solid #0B7DDA;
+color:#0B7DDA;
+
+}
+
+.primary-btn:hover,
+.book-btn:hover{
+
+background:#0664B3;
+
+}
+
+.secondary-btn:hover{
+
+background:#0B7DDA;
+  /* ==========================================
+   SKY HEALTHCARE PRO - STYLE.CSS (PART 2)
+========================================== */
+
+/* Sections */
+section{
+    padding:80px 0;
+}
+
+section h2{
+    text-align:center;
+    font-size:38px;
+    color:#0B7DDA;
+    margin-bottom:50px;
+}
+
+/* Services */
+.services{
+    background:#ffffff;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:all .3s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(11,125,218,.18);
+}
+
+.card h3{
+    color:#0B7DDA;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+/* About */
+
+.about{
+    background:#eef8ff;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
+    margin-bottom:40px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.feature-box{
+    background:#fff;
+    padding:25px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.feature-box h3{
+    color:#0B7DDA;
+    margin-bottom:10px;
+}
+
+/* Contact */
+
+.contact{
+    background:#ffffff;
+    text-align:center;
+}
+
+.contact p{
+    font-size:18px;
+    margin:12px 0;
+}
+
+.contact-buttons{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:
+      /* ==========================================
+   SKY HEALTHCARE PRO - STYLE.CSS (PART 3)
+========================================== */
+
+/* Responsive Design */
+
+@media (max-width:991px){
+
+.header .container{
+    flex-direction:column;
+    gap:20px;
+}
+
+.nav-menu{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:18px;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+}
+
+@media (max-width:768px){
+
+.hero{
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+section{
+    padding:60px 0;
+}
+
+section h2{
+    font-size:30px;
+}
+
+.logo{
+    font-size:24px;
+}
+
+.primary-btn,
+.secondary-btn,
+.book-btn{
+    display:block;
+    width:100%;
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.contact-buttons{
+    flex-direction:column;
+}
+
+}
+
+/* Smooth Animation */
+
+.card,
+.feature-box{
+    transition:all .35s ease;
+}
+
+.hero h1,
+.hero p,
+.hero .primary-btn{
+    animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+
+from{
+    opacity:0;
+    transform:translateY(40px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
+
+/* Selection */
+
+::selection{
+    background:#0B7DDA;
+    color:#fff;
+}
+
+/* Scrollbar */
+
+::-webkit
